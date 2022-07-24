@@ -27,9 +27,7 @@ body {
     border-radius: 10px;
     text-align: center;
 }
-.header_login h1{
 
-}
 
 .header_login input[type=text], input[type=password], input[type=email], input[type=number] {
     width: 70%;

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- css cho clas header_index2 và class tab -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- css cho tabcontent -->
+    <link rel="stylesheet" href="./css/trang_chu.css">
+
+    <script src="./javascripts/tab.js"></script>
+
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div class="body_index2">
+        <div class="header_index2">
+            <div class="headr_logo">
+                <img src="images/logo.png" />
+                <h2>Dino Account</h2>
+            </div>
+            <div class="header_account">
+                <img src="images/avatar.JPG" />
+                <p>nhocdathacko</p>
+                <a href="login.html"><button>Đăng xuất</button></a>
+            </div>
+        </div>
+
+        <!-- Tab link -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'trang_chu')">Trang chủ</button>
+            <button class="tablinks" onclick="openCity(event, 'xep_hang')">Xếp hạng</button>
+            <button class="tablinks" onclick="openCity(event, 'thu_vien')">Thư viện</button>
+            <button class="tablinks" onclick="openCity(event, 'ho_tro')">Hỗ trợ</button>
+            <button class="tablinks" onclick="openCity(event, 'nap_the')">Nạp thẻ</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="trang_chu" class="tabcontent">
+            <div class="tab_home">
+                <div class="userinfo">
+                    <div class="info">
+                        <img src="images/avatar.JPG" />
+                        <div class="info-list">
+                            <h5>nhocdathacko</h5>
+                            <h4>$&nbsp;300</h4>
+                            <p>Bạn đang nghĩ gì?</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="info2">
+                        <div class="info2-item">
+                            <i class="material-icons">&#xe0be;</i>
+                            <a href="#">nhocdathacko@gmail.com</a>
+                        </div>
+                        <div class="info2-item">
+                            <i class="material-icons">	&#xe899;</i>
+                            <a href="#">Thay đổi mật khẩu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="userhistory">
+                    <div class="user_table">
+                        <div class="history-action">
+                            <p>LỊCH SỬ ĐĂNG NHẬP</p>
+                            <div class="history-all">
+                                <p>Lịch sử 5 hoạt động gần đây nhất của bạn.</p>
+                                <a href="#">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="history-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ngày tháng</th>
+                                        <th>Quốc gia</th>
+                                        <th>IP</th>
+                                        <th>Hoạt động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2015-09-16 14:25:11 GMT+7</td>
+                                        <td>VN</td>
+                                        <td>113.161.131.10</td>
+                                        <td>Thay đổi mật khẩu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-07-22 13:43:1 GMT+7</td>
+                                        <td>VN</td>
+                                        <td>115.79.63.187</td>
+                                        <td>Đăng nhập vào game</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-07-22 13:43:1 GMT+7</td>
+                                        <td>VN</td>
+                                        <td>115.79.63.187</td>
+                                        <td>Nạp tiền</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-07-22 13:43:1 GMT+7</td>
+                                        <td>VN</td>
+                                        <td>115.79.63.187</td>
+                                        <td>Nạp tiền</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-07-22 13:43:1 GMT+7</td>
+                                        <td>VN</td>
+                                        <td>115.79.63.187</td>
+                                        <td>Nạp tiền</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="xep_hang" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+        <div id="thu_vien" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo isn't the capital of Japan.</p>
+        </div>
+        <div id="ho_tro" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="nap_the" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('trang_chu').style.display = "block";
+        document.getElementById('xep_hang').style.display = "none";
+        document.getElementById('thu_vien').style.display = "none";
+        document.getElementById('ho_tro').style.display = "none";
+        document.getElementById('nap_the').style.display = "none";
+    </script>
+
+</body>
+
+</html>
