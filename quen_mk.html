@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- css cho clas header_index2 và class tab -->
+    <link rel="stylesheet" href="./css/mk.css">
+
+    <!-- css cho tabcontent -->
+
+    <title>Quên mật khẩu</title>
+</head>
+
+<body>
+    <div class="forgot_password">
+        <div class="fogot_logo">
+            <a href="index.html">Dino Account</a>
+        </div>
+        <div class="fogot_form">
+            <form class="form_in">
+                <h2>Quên mật khẩu</h2>
+                <br>
+                <input type="email" placeholder="Nhập email liên kết tài khoản" id="usernamen" class="in_email">
+                <button type="submit" class="submit_dn" onclick="checkEmail()">Gửi đến email</button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        function checkEmail(){
+            alert("Đã gửi qua mail")
+        }
+    </script>
+
+</body>
+
+</html>

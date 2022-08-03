@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- css cho clas header_index2 và class tab -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/menu.css">
 
     <!-- css cho tabcontent -->
     <link rel="stylesheet" href="./css/trang_chu.css">
@@ -34,16 +34,15 @@
             </div>
         </div>
 
-        <!-- Tab link -->
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'trang_chu')">Trang chủ</button>
-            <button class="tablinks" onclick="openCity(event, 'xep_hang')">Xếp hạng</button>
-            <button class="tablinks" onclick="openCity(event, 'thu_vien')">Thư viện</button>
-            <button class="tablinks" onclick="openCity(event, 'ho_tro')">Hỗ trợ</button>
-            <button class="tablinks" onclick="openCity(event, 'nap_the')">Nạp thẻ</button>
-        </div>
+        <ul class="menu-list">
+            <a href="index.html" class="tablinks" style="color: red;
+            border-bottom: 2px solid red;"><li>Trang chủ</li></a>
+            <a href="xep_hang.html" class="tablinks" ><li>Xếp hạng</li></a>
+            <a href="thu_vien.html" class="tablinks" ><li>Thư viện</li></a>
+            <a href="ho_tro.html" class="tablinks" ><li>Hỗ trợ</li></a>
+            <a href="nap_the.html" class="tablinks" ><li>Nạp thẻ</li></a>
+        </ul>
 
-        <!-- Tab content -->
         <div id="trang_chu" class="tabcontent">
             <div class="tab_home">
                 <div class="userinfo">
@@ -106,13 +105,13 @@
                                         <td>Nạp tiền</td>
                                     </tr>
                                     <tr>
-                                        <td>2015-07-22 13:43:1 GMT+7</td>
+                                        <td>2015-07-21 14:43:1 GMT+7</td>
                                         <td>VN</td>
                                         <td>115.79.63.187</td>
-                                        <td>Nạp tiền</td>
+                                        <td>Đăng nhập vào game</td>
                                     </tr>
                                     <tr>
-                                        <td>2015-07-22 13:43:1 GMT+7</td>
+                                        <td>2015-07-21 13:43:1 GMT+7</td>
                                         <td>VN</td>
                                         <td>115.79.63.187</td>
                                         <td>Nạp tiền</td>
@@ -125,32 +124,9 @@
             </div>
 
         </div>
-        <div id="xep_hang" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-        </div>
-        <div id="thu_vien" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo isn't the capital of Japan.</p>
-        </div>
-        <div id="ho_tro" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-        <div id="nap_the" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
 
     </div>
 
-    <script>
-        document.getElementById('trang_chu').style.display = "block";
-        document.getElementById('xep_hang').style.display = "none";
-        document.getElementById('thu_vien').style.display = "none";
-        document.getElementById('ho_tro').style.display = "none";
-        document.getElementById('nap_the').style.display = "none";
-    </script>
 
 </body>
 

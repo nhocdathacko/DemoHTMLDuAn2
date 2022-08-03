@@ -39,3 +39,10 @@
 .nav-item:hover{
     border-bottom: 3px solid rgb(0, 162, 255);
 }
+.tabcontent{
+    margin: 3% 15% 0 15%;
+    background-color: white;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
